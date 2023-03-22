@@ -1,13 +1,13 @@
 {
   "name": "@solidesign/components",
   "version": "0.1.0",
-  "main": "dist/umd/solidesign.js",
+  "main": "dist/umd/solidesign-components.js",
   "types": "dist/types/index.d.ts",
   "author": "w4ngzhen",
   "license": "MIT",
   "scripts": {
     "build:dts": "tsc -p tsconfig.json",
-    "build:styles": "lessc src/_styles/index.less dist/styles/solidesign.css",
+    "build:styles": "lessc src/_styles/index.less dist/styles/solidesign-components.css",
     "build:umd": "webpack --config webpack.config.js",
     "build:dist": "yarn build:dts && yarn build:styles && yarn build:umd"
   },
@@ -15,17 +15,18 @@
     "solid-js": "^1.6.15"
   },
   "devDependencies": {
-    "less": "^4.1.3",
-    "solid-js": "^1.6.15",
-    "typescript": "^5.0.2",
-    "webpack": "^5.76.2",
-    "webpack-cli": "^5.0.1",
     "@babel/core": "^7.21.3",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-typescript": "^7.21.0",
     "babel-loader": "^9.1.2",
-    "babel-preset-solid": "^1.6.13"
-  }
+    "babel-preset-solid": "^1.6.13",
+    "less": "^4.1.3",
+    "solid-js": "^1.6.15",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {}
 }
