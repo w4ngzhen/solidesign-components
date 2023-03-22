@@ -1,0 +1,51 @@
+@import "src/_styles/_define";
+@import "../../_styles/_variable";
+
+@sd-button-cls: @{sd-prefix}-button;
+
+.@{sd-button-cls} {
+
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+
+  > span {
+    display: inline-block;
+  }
+
+  &-type-primary {
+    color: #fff;
+    border-color: @primary-color;
+    background: @primary-color;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  }
+
+  &-type-dashed {
+    color: rgba(0, 0, 0, 0.85);
+    border-color: #d9d9d9;
+    background: #fff;
+    border-style: dashed;
+  }
+
+  &-type-text {
+    color: rgba(0, 0, 0, 0.85);
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  &-type-link {
+    color: @primary-color;
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  &-type-ghost {
+    color: rgba(0, 0, 0, 0.85);
+    border-color: #d9d9d9;
+    background: transparent;
+  }
+}
